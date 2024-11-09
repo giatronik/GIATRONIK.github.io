@@ -1,0 +1,283 @@
+/* Fondo para toda la página */
+
+body {
+    background: #000;
+    /* Fondo negro para toda la página */
+    color: #fff;
+    /* Texto blanco para mejor contraste */
+}
+
+
+/* Sección Hero */
+
+.hero {
+    height: 100vh;
+    background-image: url('img/inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Sección de Servicios */
+
+.services {
+    background: linear-gradient(135deg, #007bff 0%, #00d2ff 100%);
+}
+
+.service {
+    background: #1f1f1f;
+    /* Fondo gris oscuro para los servicios */
+    margin: 15px;
+    /* Márgenes para separar los servicios */
+    padding: 20px;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    /* Cambio de color de fondo al pasar el ratón */
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-top: 15px;
+    color: #fff;
+}
+
+
+/* Sección de Servicios */
+
+.services {
+    background: color(srgb red green blue);
+}
+
+.service {
+    background: #1f1f1f;
+    /* Fondo gris oscuro para los servicios */
+    margin: 15px;
+    /* Márgenes para separar los servicios */
+    padding: 20px;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    /* Cambio de color de fondo al pasar el ratón */
+}
+
+.service-icon {
+    font-size: 3rem;
+    /* Tamaño de los iconos */
+    color: #fff;
+    /* Color blanco para los iconos */
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-top: 15px;
+    color: #fff;
+}
+
+
+/* Estilos para el Carrusel */
+
+.carousel-item {
+    position: relative;
+    height: 60vh;
+    /* Altura ajustable según tus necesidades */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el área del carrusel */
+}
+
+.carousel-caption {
+    bottom: 20%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra para mejor visibilidad del texto */
+}
+
+.carousel-caption .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Ajustar el tamaño del botón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo de las flechas de control */
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    /* Tamaño del icono */
+    height: 30px;
+    /* Tamaño del icono */
+}
+
+@media (max-width: 767.98px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption .btn-primary {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+}
+
+
+/* Estilos para la sección "Quienes Somos" */
+
+#quienes-somos {
+    background-color: #f8f9fa;
+    /* Fondo claro para contraste */
+    color: #343a40;
+    /* Texto oscuro para buena legibilidad */
+}
+
+#quienes-somos h2 {
+    font-size: 2.5rem;
+    /* Tamaño del título */
+    margin-bottom: 1rem;
+    /* Espacio debajo del título */
+}
+
+#quienes-somos p {
+    font-size: 1rem;
+    /* Tamaño de fuente del párrafo */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+}
+
+.img-fluid {
+    max-width: 100%;
+    /* Asegura que la imagen no sobrepase el contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.rounded {
+    border-radius: 0.5rem;
+    /* Bordes redondeados para la imagen */
+}
+
+
+/* Estilos para el footer */
+
+#contacto {
+    background-color: #343a40;
+    /* Fondo oscuro para el footer */
+    color: #f8f9fa;
+    /* Texto claro para contraste */
+}
+
+#contacto h5 {
+    font-size: 1.5rem;
+    /* Tamaño de fuente para los encabezados */
+    margin-bottom: 1rem;
+    /* Espacio debajo de los encabezados */
+}
+
+#contacto p {
+    font-size: 1rem;
+    /* Tamaño de fuente para el texto */
+    margin-bottom: 0.5rem;
+    /* Espacio debajo del texto */
+}
+
+.ratio-16x9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Aspect ratio de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.ratio-16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+    /* Asegura que el texto sea claro */
+}
+
+a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Subrayado en el hover para enlaces */
+}
+
+
+/* Estilo para el botón de WhatsApp */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    /* Espacio desde el borde inferior */
+    right: 20px;
+    /* Espacio desde el borde derecho */
+    background-color: #25D366;
+    /* Color verde de WhatsApp */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Hacer el botón redondo */
+    padding: 20px;
+    /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra del botón */
+    font-size: 2rem;
+    /* Tamaño del icono */
+    text-align: center;
+    /* Centrar el icono */
+    transition: background-color 0.3s ease;
+    /* Transición para el cambio de color */
+    z-index: 1000;
+    /* Asegurarse de que el botón esté encima de otros elementos */
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    /* Color más oscuro al pasar el ratón */
+}
